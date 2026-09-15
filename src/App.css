@@ -1,0 +1,70 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f1f5f9;
+}
+
+.app-header {
+  padding: 2rem;
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 2px solid #1e40af;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-dot.live {
+  background-color: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.status-dot.offline {
+  background-color: #ef4444;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.app-main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

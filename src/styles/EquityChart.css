@@ -1,0 +1,14 @@
+.equity-chart {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid #1e40af;
+  border-radius: 12px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.equity-chart h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #e0e7ff;
+}
